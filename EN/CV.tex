@@ -12,7 +12,7 @@
 \usepackage{enumitem}
 
 % Page margins
-\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\geometry{left=1.5cm, right=1.5cm, top=1.2cm, bottom=1.2cm}
 
 % Colors
 \definecolor{linkcolor}{RGB}{0, 102, 204}
@@ -24,69 +24,100 @@
 	linkcolor=linkcolor,
 	urlcolor=linkcolor,
 	citecolor=linkcolor,
+	pdftitle={Abolfazl Mohammadi Yaychi - CV},
+	pdfauthor={Abolfazl Mohammadi Yaychi},
 }
 
 % Section style
 \titleformat{\section}
 {\large\bfseries\color{sectioncolor}}
-{\thesection}{1em}{}
+{}{0em}{}
 [\titlerule]
+\titlespacing*{\section}{0pt}{0.9em}{0.4em}
 
 % List spacing
 \setlist{nosep, leftmargin=*}
+\setlist[itemize]{itemsep=0.25em}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
 
 \begin{document}
-	
+
 	% ==================== HEADER ====================
 	\begin{center}
-		{\Huge \textbf{Abolfazl Mohammadi Yaychi}} \\[0.8em]
+		{\Huge \textbf{Abolfazl Mohammadi Yaychi}} \\[0.4em]
+		{\large Physics Undergraduate \quad $\cdot$ \quad Theoretical Physics} \\[0.8em]
 		\faPhone \quad 09104908551 \quad $\cdot$ \quad
-		\faEnvelope \quad \href{mailto:abolfazlqw12@gmail.com}{Email} \\[0.3em]
+		\faEnvelope \quad \href{mailto:abolfazlqw12@gmail.com}{abolfazlqw12@gmail.com} \quad $\cdot$ \quad
+		\faMapMarker* \quad Tehran, Iran \\[0.3em]
 		\faGlobe \quad \href{https://abolfazlmohammadiyaychi.ir}{Website} \quad $\cdot$ \quad
-		\faLinkedin \quad \href{https://www.linkedin.com/in/abolfazl--mohammadi}{LinkedIn} \\[0.3em]
+		\faLinkedin \quad \href{https://www.linkedin.com/in/abolfazl--mohammadi}{LinkedIn} \quad $\cdot$ \quad
 		\faGithub \quad \href{https://github.com/AbolfazlMohammadi2005}{GitHub} \quad $\cdot$ \quad
 		\faTelegram \quad \href{https://t.me/The_PaterAretes}{Telegram}
 	\end{center}
-	
-	% ==================== SKILLS ====================
-\section{Skills \quad \faCode}
 
-\begin{itemize}[label=--]
-	\item \textbf{C++}: Advanced (Primary language)	
-		\item \textbf{Git}: Advanced
-		\item \textbf{LaTeX}: Advanced
-	\item \textbf{Python}: Intermediate
-	\item \textbf{Mathematica}: Intermediate
-	\item \textbf{HTML \& CSS}: Intermediate
-	\item \textbf{Machine Learning}: Intermediate
+	% ==================== SUMMARY ====================
+	\section{Summary}
 
-	
-\end{itemize}
-	
-	% ==================== LANGUAGE ====================
-	\section{Languages \quad \faLanguage}
-	
+	Physics undergraduate working in theoretical physics. I use symbolic and numerical computation to derive, verify, and document results in General Relativity, modified gravity, and quantum theory, and I publish the resulting code and typeset derivations openly on GitHub.
+
+	% ==================== EDUCATION ====================
+	\section{Education \quad \faGraduationCap}
+
+	\textbf{B.Sc. in Physics} \hfill K. N. Toosi University of Technology \\
+	Tehran, Iran
+
+	% ==================== RESEARCH INTERESTS ====================
+	\section{Research Interests \quad \faAtom}
+
 	\begin{itemize}[label=--]
-		\item \textbf{Persian}: Native
-		\item \textbf{English}: Upper-Intermediate (70\%)
+		\item General Relativity and the differential geometry of spacetime
+		\item Modified gravity, including $f(R)$ gravity
+		\item Quantum Mechanics and Quantum Field Theory
+		\item Symbolic and numerical methods for field equations
 	\end{itemize}
-	
+
+	% ==================== PROJECTS ====================
+	\section{Selected Projects \quad \faGithub}
+
+	\begin{itemize}[label=--]
+		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/GR-Calculations}{GR-Calculations}} (Python, Mathematica, LaTeX): Symbolic and numerical calculations in General Relativity. Computes curvature quantities for the Schwarzschild, FLRW, static spherically symmetric, and 2D hyperbolic geometries, includes an $f(R)$ gravity treatment of static spherical geometry, and provides a typeset derivation for each calculation.
+		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/QM-QFT-Calculations}{QM-QFT-Calculations}} (Python, LaTeX): Calculations in Quantum Mechanics and Quantum Field Theory, featuring the Dirac equation on a static spherically symmetric geometry.
+		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/Simple-small-scale-simulation-of-the-solar-system}{Solar System Simulation}} (Python): Newtonian simulation of the Sun, Earth, and Mars with Matplotlib visualization.
+		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/Welding-Project}{Welding Expert System}} (C++): Calculator for welding parameters, heat input, and consumable selection across welding methods and base metals.
+		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/MathToolkit}{MathToolkit}} (C++): Statistical and mathematical computation toolkit.
+		\item \textbf{Odyssey series} (C, C++, AVR): Structured programming courses with solved exercises:
+			\href{https://github.com/AbolfazlMohammadi2005/C-Odyssey}{C},
+			\href{https://github.com/AbolfazlMohammadi2005/Cpp-Odyssey}{C++}, and
+			\href{https://github.com/AbolfazlMohammadi2005/Microcontroller-Odyssey}{Microcontroller (ATmega32)}.
+		\item The complete list is on \href{https://github.com/AbolfazlMohammadi2005?tab=repositories}{GitHub}.
+	\end{itemize}
+
+	% ==================== TEACHING ====================
+	\section{Teaching Experience \quad \faChalkboardTeacher}
+
+	\textbf{Teaching Assistant} \\[0.2em]
+	Analytical Mechanics I, Mathematical Physics I and II, General Physics II, III and IV, Thermodynamics I. Prepared exercises, quizzes, and grading materials, available on \href{https://github.com/AbolfazlMohammadi2005}{GitHub}.
+
+	% ==================== SKILLS ====================
+	\section{Skills \quad \faCode}
+
+	\textbf{Advanced:} C++ (primary language), Git, LaTeX \\[0.3em]
+	\textbf{Intermediate:} Python (SymPy, EinsteinPy, NumPy, Matplotlib), Mathematica, HTML \& CSS, Machine Learning
+
 	% ==================== CERTIFICATIONS ====================
 	\section{Certifications \quad \faCertificate}
-	
-	\begin{itemize}[label=--]
-		\item \faGithub \quad \href{https://faradars.org/verify/8A644022?lang=en}{Git \& GitHub} – Faradars
-		\item \faCode \quad \href{https://faradars.org/verify/B6A1C8AA?lang=en}{C++} – Faradars
-		\item \faFile \quad \href{https://www.coursera.org/account/accomplishments/records/SJ8X650LGR6X}{LaTeX} – Coursera
-		\item \faPython \quad \href{https://www.coursera.org/account/accomplishments/records/14T1QHM9IGJ9}{Python} – Coursera
-		\item \faCogs \quad \href{https://www.coursera.org/account/accomplishments/records/Q2XLXFUVA3OK}{Machine Learning} – Coursera
-	\end{itemize}
-	
-	% ==================== PROJECTS ====================
-	\section{Projects \quad \faGithub}
-	
-	\begin{itemize}[label=--]
-		\item Check out my \href{https://github.com/AbolfazlMohammadi2005?tab=repositories}{GitHub repository} for all my projects and code samples.
-	\end{itemize}
-	
+
+	\href{https://faradars.org/verify/8A644022?lang=en}{Git \& GitHub} (Faradars) \quad $\cdot$ \quad
+	\href{https://faradars.org/verify/B6A1C8AA?lang=en}{C++} (Faradars) \quad $\cdot$ \quad
+	\href{https://www.coursera.org/account/accomplishments/records/SJ8X650LGR6X}{LaTeX} (Coursera) \quad $\cdot$ \quad
+	\href{https://www.coursera.org/account/accomplishments/records/14T1QHM9IGJ9}{Python} (Coursera) \quad $\cdot$ \quad
+	\href{https://www.coursera.org/account/accomplishments/records/Q2XLXFUVA3OK}{Machine Learning} (Coursera)
+
+	% ==================== LANGUAGES ====================
+	\section{Languages \quad \faLanguage}
+
+	\textbf{Persian:} Native \quad $\cdot$ \quad \textbf{English:} Upper-Intermediate
+
 \end{document}
