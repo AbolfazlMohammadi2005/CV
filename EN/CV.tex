@@ -1,11 +1,14 @@
 \documentclass[11pt,a4paper]{article}
 
-% Required packages
+% Packages (all standard; compiles with pdflatex, no special fonts needed)
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{cmap}              % clean, copyable text in the PDF
 \usepackage[T1]{fontenc}
-\usepackage{fontawesome5}
-\usepackage{hyperref}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\urlstyle{same}
 \usepackage{geometry}
 \usepackage{xcolor}
 \usepackage{titlesec}
@@ -14,11 +17,11 @@
 % Page margins
 \geometry{left=1.5cm, right=1.5cm, top=1.2cm, bottom=1.2cm}
 
-% Colors
-\definecolor{linkcolor}{RGB}{0, 102, 204}
-\definecolor{sectioncolor}{RGB}{0, 86, 179}
+% Colors (dark enough for comfortable reading on screen and in print)
+\definecolor{linkcolor}{RGB}{16, 112, 62}
+\definecolor{sectioncolor}{RGB}{15, 30, 60}
 
-% Hyperlink setup
+% Hyperlinks: dark green text
 \hypersetup{
 	colorlinks=true,
 	linkcolor=linkcolor,
@@ -32,8 +35,8 @@
 \titleformat{\section}
 {\large\bfseries\color{sectioncolor}}
 {}{0em}{}
-[\titlerule]
-\titlespacing*{\section}{0pt}{0.9em}{0.4em}
+[\color{sectioncolor}\titlerule]
+\titlespacing*{\section}{0pt}{0.85em}{0.4em}
 
 % List spacing
 \setlist{nosep, leftmargin=*}
@@ -47,15 +50,14 @@
 	% ==================== HEADER ====================
 	\begin{center}
 		{\Huge \textbf{Abolfazl Mohammadi Yaychi}} \\[0.4em]
-		{\large Physics Undergraduate \quad $\cdot$ \quad Theoretical Physics} \\[0.8em]
-		\faPhone \quad 09104908551 \quad $\cdot$ \quad
-		\faEnvelope \quad \href{mailto:abolfazlqw12@gmail.com}{abolfazlqw12@gmail.com} \quad $\cdot$ \quad
-		\faMapMarker* \quad Tehran, Iran \\[0.3em]
-		\faGlobe \quad \href{https://abolfazlmohammadiyaychi.ir}{Website} \quad $\cdot$ \quad
-		\faLinkedin \quad \href{https://www.linkedin.com/in/abolfazl--mohammadi}{LinkedIn} \quad $\cdot$ \quad
-		\faGithub \quad \href{https://github.com/AbolfazlMohammadi2005}{GitHub} \quad $\cdot$ \quad
-		\faTelegram \quad \href{https://t.me/The_PaterAretes}{Telegram} \quad $\cdot$ \quad
-		\faTelegram \quad \href{https://t.me/Physicsbymadman}{Channel}
+		{\large Physics Undergraduate \quad $\cdot$ \quad Theoretical Physics} \\[0.7em]
+		Tehran, Iran \\[0.4em]
+		\href{mailto:abolfazlqw12@gmail.com}{Email} \quad $\cdot$ \quad
+		\href{https://abolfazlmohammadiyaychi.ir}{Website} \quad $\cdot$ \quad
+		\href{https://github.com/AbolfazlMohammadi2005}{GitHub} \quad $\cdot$ \quad
+		\href{https://www.linkedin.com/in/abolfazl--mohammadi}{LinkedIn} \quad $\cdot$ \quad
+		\href{https://t.me/The_PaterAretes}{Telegram} \quad $\cdot$ \quad
+		\href{https://t.me/Physicsbymadman}{Telegram Channel}
 	\end{center}
 
 	% ==================== SUMMARY ====================
@@ -64,13 +66,13 @@
 	Physics undergraduate working in theoretical physics. I use symbolic and numerical computation to derive, verify, and document results in General Relativity, modified gravity, and quantum theory, and I publish the resulting code and typeset derivations openly on GitHub.
 
 	% ==================== EDUCATION ====================
-	\section{Education \quad \faGraduationCap}
+	\section{Education}
 
 	\textbf{B.Sc. in Physics} \hfill K. N. Toosi University of Technology \\
 	Tehran, Iran
 
 	% ==================== RESEARCH INTERESTS ====================
-	\section{Research Interests \quad \faAtom}
+	\section{Research Interests}
 
 	\begin{itemize}[label=--]
 		\item General Relativity and the differential geometry of spacetime
@@ -80,7 +82,7 @@
 	\end{itemize}
 
 	% ==================== PROJECTS ====================
-	\section{Selected Projects \quad \faGithub}
+	\section{Selected Projects}
 
 	\begin{itemize}[label=--]
 		\item \textbf{\href{https://github.com/AbolfazlMohammadi2005/GR-Calculations}{GR-Calculations}} (Python, Mathematica, LaTeX): Symbolic and numerical calculations in General Relativity. Computes curvature quantities for the Schwarzschild, FLRW, static spherically symmetric, and 2D hyperbolic geometries, includes an $f(R)$ gravity treatment of static spherical geometry, and provides a typeset derivation for each calculation.
@@ -96,28 +98,28 @@
 	\end{itemize}
 
 	% ==================== TEACHING ====================
-	\section{Teaching Experience \quad \faChalkboardTeacher}
+	\section{Teaching Experience}
 
 	\textbf{Teaching Assistant} \\[0.2em]
 	Analytical Mechanics I, Mathematical Physics I and II, General Physics II, III and IV, Thermodynamics I. Prepared exercises, quizzes, and grading materials, available on \href{https://github.com/AbolfazlMohammadi2005}{GitHub}.
 
 	% ==================== SKILLS ====================
-	\section{Skills \quad \faCode}
+	\section{Skills}
 
 	\textbf{Advanced:} C++ (primary language), Git, LaTeX \\[0.3em]
 	\textbf{Intermediate:} Python (SymPy, EinsteinPy, NumPy, Matplotlib), Mathematica, HTML \& CSS, Machine Learning
 
 	% ==================== CERTIFICATIONS ====================
-	\section{Certifications \quad \faCertificate}
+	\section{Certifications}
 
-	\href{https://faradars.org/verify/8A644022?lang=en}{Git \& GitHub} (Faradars) \quad $\cdot$ \quad
-	\href{https://faradars.org/verify/B6A1C8AA?lang=en}{C++} (Faradars) \quad $\cdot$ \quad
-	\href{https://www.coursera.org/account/accomplishments/records/SJ8X650LGR6X}{LaTeX} (Coursera) \quad $\cdot$ \quad
-	\href{https://www.coursera.org/account/accomplishments/records/14T1QHM9IGJ9}{Python} (Coursera) \quad $\cdot$ \quad
-	\href{https://www.coursera.org/account/accomplishments/records/Q2XLXFUVA3OK}{Machine Learning} (Coursera)
+	\textbf{Faradars:} \href{https://faradars.org/verify/8A644022?lang=en}{Git \& GitHub} \quad $\cdot$ \quad
+	\href{https://faradars.org/verify/B6A1C8AA?lang=en}{C++} \\[0.3em]
+	\textbf{Coursera:} \href{https://www.coursera.org/account/accomplishments/records/SJ8X650LGR6X}{LaTeX} \quad $\cdot$ \quad
+	\href{https://www.coursera.org/account/accomplishments/records/14T1QHM9IGJ9}{Python} \quad $\cdot$ \quad
+	\href{https://www.coursera.org/account/accomplishments/records/Q2XLXFUVA3OK}{Machine Learning}
 
 	% ==================== LANGUAGES ====================
-	\section{Languages \quad \faLanguage}
+	\section{Languages}
 
 	\textbf{Persian:} Native \quad $\cdot$ \quad \textbf{English:} Upper-Intermediate
 
